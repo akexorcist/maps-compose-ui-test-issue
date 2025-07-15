@@ -36,7 +36,7 @@ class MapScreenTest {
     val testCoroutineRule = TestCoroutineRule()
 
     @Test
-    fun mapScreen_onAnimateCamera_shouldBeMoved() = runTest {
+    fun verify_mapScreenComponent() = runTest {
         launchActivity<MainActivity>()
         composeTestRule.onNodeWithTag("map_screen_title").assertIsDisplayed()
         composeTestRule.onNodeWithText("This is a map").assertIsDisplayed()
